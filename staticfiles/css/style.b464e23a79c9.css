@@ -1,0 +1,110 @@
+
+html,
+body{
+    height: 100%;
+}
+/*
+For content
+*/
+.content{
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.name_body .pic img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.posts .pic1 img {
+    width: 50%;
+}
+
+.content .main-header{
+    display: flex;
+}
+
+/*
+For post
+*/
+.post_form{
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+.post_form input{
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.post_form textarea{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.posts ul{
+    padding: 0;
+}
+.posts li{
+    position: relative;
+    display:flex;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 40px;
+    list-style: none;
+}
+.posts li .menu_icon{
+    width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding:10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.posts li .menu a{
+    text-decoration: none;
+}
+.posts li .logo{
+    flex-basis: 15%;
+}
+.posts li .logo img{
+    width: 60%;
+}
+.posts li .name_body{
+    flex-basis: 85%;
+}
+.posts li .name_body .name{
+    font-weight: bold;
+}
+.posts li .name_body .datetime{
+    color: gray;
+}
+.content .post_form .tweet button{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 452px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0px;
+    width: 88px;
+    height: 35px;
+}
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name{
+        font-size: 20px;
+    }
+    
+}
