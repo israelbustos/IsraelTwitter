@@ -40,18 +40,18 @@
                <div class="name">{{ post.name }}</div>
                <div class="datetime">{{ post.created_at }}</div>
                <p>{{ post.body }} </p>
-                
+               {% if post.image.url %}
                <div class="pic">                
                     <img src="{{ post.image.url }}" />                
                 </div>
-
+                {% endif %}
                 <form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
                 {% csrf_token %}
             <button class="like-button" type="submit", name="post_id", value="{{ post.id }}" href="post_id">
               &#10084;
             </button>
             {{post.likes}}
-        </form>  
+        </form> 
                
             </div>
         </li>
